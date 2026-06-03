@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Form Submitted</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top left, #FFD700, #FF8C00, #DC143C);
+            color: #fff;
+            padding: 20px;
+        }
+
+        .thank-you-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+            max-width: 500px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .trophy-icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite alternate;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p.message {
+            font-size: 18px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: #f3f4f6;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #FFD700, #FF4500);
+            border-radius: 20px;
+            margin: 0 auto 25px;
+        }
+
+        .small-text {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #1e90ff, #32cd32);
+            color: #fff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-15px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .thank-you-card {
+                padding: 35px 25px;
+            }
+            h1 { font-size: 28px; }
+            p.message { font-size: 16px; }
+            .trophy-icon { font-size: 55px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-card">
+        <div class="trophy-icon">🏆</div>
+        <h1>Thank You!</h1>
+        <p class="message">
+            Your World Cup event form has been submitted successfully. 
+            We're thrilled to have you join the celebration of football!
+        </p>
+        <div class="divider"></div>
+        <p class="small-text">Get ready for the excitement and stay tuned for updates!</p>
+        <a href="#" class="btn">Return Home</a>
+    </div>
+
+</body>
+</html>
