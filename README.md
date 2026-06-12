@@ -3,7 +3,4 @@ It is a simple beginner project to demonstrate the use of Django in the real wor
 An admin pannel will also available. 
 It is just a basic page without any authenication rather just for a testing knowledge.
 
-Here's You can see the result which is hosted on the render:
-https://football-project-btjr.onrender.com/  => for Normal User registration
 
-https://football-project-btjr.onrender.com/admin   => For Admin only.
